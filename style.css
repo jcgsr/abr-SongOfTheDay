@@ -46,7 +46,18 @@ a {
 i {
   color: var(--secondary);
 }
-
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--secondary);
+  padding: 1rem;
+  text-align: center;
+}
+header a {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-family: var(--ff1);
+}
 footer {
   background-color: var(--secondary);
   padding: 2rem;
@@ -239,6 +250,24 @@ footer p {
   font-size: 4.5em;
   color: var(--terciary);
 }
+/* Barba */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+}
+.page-transition {
+  position: absolute;
+  top: 0;
+  background-color: var(--terciary);
+  width: 100%;
+  height: 0%;
+}
+/* Barba */
 /* IDS */
 #date {
   color: var(--secondary);
