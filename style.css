@@ -26,6 +26,13 @@ h1 {
   margin: 2rem auto;
   color: var(--secondary);
 }
+h3 {
+  font-size: 2em;
+  font-weight: var(--fb);
+  text-align: center;
+  margin: 2rem auto;
+  color: var(--primary);
+}
 h4 {
   font-size: 1.5em;
   font-weight: var(--fb);
@@ -158,6 +165,8 @@ footer p {
   line-height: 1.7em;
   background-color: var(--secondary);
   font-weight: var(--fm);
+  margin: 0 auto;
+  text-align: center;
 }
 
 .lyrics p {
@@ -165,6 +174,12 @@ footer p {
   text-align: center;
   margin: 0 auto;
   color: var(--primary);
+}
+
+@media screen and (max-width: 456px) {
+  .lyrics p {
+    width: 90%;
+  }
 }
 
 .music-platform {
@@ -183,7 +198,7 @@ footer p {
   color: var(--terciary);
   font-weight: var(--fb);
   font-family: var(--ff1);
-  letter-spacing: 7px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   background: linear-gradient(
     to right,
@@ -194,7 +209,7 @@ footer p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 3s infinite linear;
-  padding: 60px;
+  padding: 1rem;
 }
 .timespan {
   text-align: center;
