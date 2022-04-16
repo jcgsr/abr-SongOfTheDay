@@ -119,3 +119,11 @@ let month = new Date().toLocaleDateString("en-us", { month: "long" });
 let year = new Date().toLocaleDateString("en-us", { year: "numeric" });
 const date = `${month} ${day}, ${year}`;
 document.querySelector("#date").innerHTML = date;
+
+// google
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: "en" },
+    "google_translate_element"
+  );
+}

@@ -298,3 +298,8 @@ footer p {
 #contact:hover {
   color: var(--primary);
 }
+#google_translate_element {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.4rem;
+}
