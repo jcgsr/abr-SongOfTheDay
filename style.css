@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: black;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem auto;
+  color: white;
+}
+h4 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem auto;
+}
+iframe {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+/* CLASSES */
+
+.video {
+  text-align: center;
+  margin: 0 auto;
+}
+.singer {
+  font-size: 12vw;
+  background: url(https://i0.statig.com.br/bancodeimagens/bp/dk/lx/bpdklxrk3q3zpdkaf2xsqteom.jpg);
+  color: transparent;
+  background-size: 20%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  animation: zoomout 10s ease 0.5s forwards;
+}
+@keyframes zoomout {
+  from {
+    background-size: 20%;
+  }
+  to {
+    background-size: 80%;
+  }
+}
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  color: hsl(0, 0%, 100%);
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.lyrics {
+  width: 70%;
+  margin: 2rem auto;
+  line-height: 1.5em;
+  color: hsl(0, 0%, 100%);
+}
+
+.music-platform {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 50%;
+}
+
+.shine {
+  color: hsl(0, 0%, 30%);
+  font-weight: bold;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    hsl(0, 0%, 30%) 0%,
+    hsl(0, 0%, 100%) 10%,
+    hsl(0, 0%, 30%) 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  padding: 60px;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 800px;
+  }
+}
+
+/* IDS */
+#date {
+  color: hsl(0, 0%, 100%);
+  font-size: large;
+  margin: 1rem auto;
+  text-align: center;
+}
