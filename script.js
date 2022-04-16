@@ -1,8 +1,4 @@
 AOS.init();
-anime({
-  targets: ".circle",
-  translateX: 250,
-});
 
 // Wrap every letter in a span
 let textWrapper = document.querySelector(".ml6 .letters");
@@ -45,5 +41,9 @@ barba.init({
   ],
 });
 
-let date = new Date();
+// let date = new Date("Feb 15 2020");
+let day = new Date().toLocaleDateString("en-us", { day: "numeric" });
+let month = new Date().toLocaleDateString("en-us", { month: "long" });
+let year = new Date().toLocaleDateString("en-us", { year: "numeric" });
+const date = `${month} ${day}, ${year}`;
 document.querySelector("#date").innerHTML = date;

@@ -7,33 +7,48 @@
     <meta name="description" content="Song of the Day to inspire you" />
     <meta name="author" content="Jovane" />
     <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="/fonts/fontawesome-free-5.3.1-web/css/all.css"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- AnimeJS -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
       integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- unpkg -->
+    <!-- Barba -->
     <script src="https://unpkg.com/@barba/core"></script>
-
-    <!-- jsdelivr -->
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
 
+    <!-- FontAwsome -->
+    <script
+      src="https://kit.fontawesome.com/2753d36e81.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Song of the Day</title>
   </head>
   <body data-barba="wrapper">
     <main data-barba="container" data-barba-namespace="home">
       <h1 class="shine">Song of the Day</h1>
-      <p id="date"></p>
-      <h1 class="singer">Nina Simone</h1>
+      <div class="timespan">
+        <p>from April 15, 2022 to</p>
+        <p id="date"></p>
+      </div>
+      <a href="https://en.wikipedia.org/wiki/Nina_Simone" target="__blank">
+        <h1 class="singer">Nina Simone</h1>
+      </a>
       <h4 class="ml6">
         <span class="text-wrapper">
           <span class="letters"
@@ -54,9 +69,9 @@
         ></iframe>
       </div>
 
-      <div class="music-platform">
+      <section class="music-platform">
         <iframe
-          class="animate__animated animate__backInLeft"
+          data-aos="fade-up"
           id="AmazonMusicEmbedB073LYYDZP"
           src="https://music.amazon.com.br/embed/B073LYYDZP/?id=1znsgLCzxd&marketplaceId=ART4WZ8MWBX2Y&musicTerritory=BR"
           width="100%"
@@ -64,7 +79,7 @@
           style="border: 1px solid rgba(0, 0, 0, 0.12); max-width: 500px"
         ></iframe>
         <iframe
-          class="animate__animated animate__backInRight"
+          data-aos="fade-up"
           style="border-radius: 12px"
           src="https://open.spotify.com/embed/track/5CKHhg31HcYYhwUeeGqvhq?utm_source=generator"
           width="100%"
@@ -73,8 +88,8 @@
           allowfullscreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         ></iframe>
-      </div>
-      <div class="lyrics">
+      </section>
+      <section class="lyrics">
         <p data-aos="fade-up">
           ♫ I wish I knew how It would feel to be free I wish I could break All
           the chains holding me I wish I could say All the things that I should
@@ -89,9 +104,82 @@
           look down at the sea And I sing 'cause I know How it feels to be free
           ♫
         </p>
-      </div>
-      <a href="/oldsongs.html">oldies</a>
+      </section>
+      <article class="explain">
+        <p data-aos="fade-up">
+          This site shows the song I'm listening to the most these days. I hope
+          it can help someone get to know new songs and new artists.
+        </p>
+        <p data-aos="fade-up">Please, feel free to leave a message.</p>
+      </article>
     </main>
+    <section class="comments">
+      <div id="graphcomment"></div>
+      <script type="text/javascript">
+        /* - - - CONFIGURATION VARIABLES - - - */
+
+        var __semio__params = {
+          graphcommentId: "song-of-the-day", // make sure the id is yours
+
+          behaviour: {
+            // HIGHLY RECOMMENDED
+            //  uid: "...", // uniq identifer for the comments thread on your page (ex: your page id)
+          },
+
+          // configure your variables here
+        };
+
+        /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
+        function __semio__onload() {
+          __semio__gc_graphlogin(__semio__params);
+        }
+
+        (function () {
+          var gc = document.createElement("script");
+          gc.type = "text/javascript";
+          gc.async = true;
+          gc.onload = __semio__onload;
+          gc.defer = true;
+          gc.src =
+            "https://integration.graphcomment.com/gc_graphlogin.js?" +
+            Date.now();
+          (
+            document.getElementsByTagName("head")[0] ||
+            document.getElementsByTagName("body")[0]
+          ).appendChild(gc);
+        })();
+      </script>
+    </section>
+    <section class="social">
+      <p>Or you can contact me through:</p>
+      <div class="social-box">
+        <a
+          href="https://twitter.com/teufel8?ref_src=twsrc%5Etfw"
+          target="__blank"
+        >
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=5579988284730&text=Hey! I'd like to talk to you about Song of the Day"
+          target="__blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="https://telegram.me/jcgsr" target="__blank"
+          ><i class="fa-brands fa-telegram"></i
+        ></a>
+        <a href="mailto:cabralguerra@gmail.com" target="__blank"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+      </div>
+    </section>
+    <a href="/oldsongs.html">oldies</a>
+    <footer>
+      <p>
+        Made with <span class="heart">❤</span> by
+        <a id="contact" href="https://jovane.netlify.app/"> Jovane </a>
+      </p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
