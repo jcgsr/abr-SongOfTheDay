@@ -20,12 +20,18 @@ body {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 5rem;
   font-weight: var(--fb);
   text-align: center;
   margin: 2rem auto;
   color: var(--secondary);
 }
+@media screen and (max-width: 456px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
 h3 {
   font-size: 2em;
   font-weight: var(--fb);
@@ -74,15 +80,14 @@ footer p {
   color: var(--primary);
   font-weight: var(--fm);
 }
-
-.img {
+/* 
+img {
   width: 40%;
   margin: 0 auto;
   text-align: center;
-  background-color: var(--secondary);
   padding: 2rem;
   margin-bottom: 1rem;
-}
+} */
 /* article p {
   position: relative;
   letter-spacing: 7px;
@@ -122,7 +127,12 @@ footer p {
     text-align: center;
   }
 }
-
+.hero {
+  background: url(./assets/cassete.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 6rem;
+  opacity: 0.8;
+}
 .singer {
   font-size: 12vw;
   background: url(https://i0.statig.com.br/bancodeimagens/bp/dk/lx/bpdklxrk3q3zpdkaf2xsqteom.jpg);
@@ -211,9 +221,9 @@ footer p {
   text-transform: uppercase;
   background: linear-gradient(
     to right,
-    hsl(0, 0%, 30%) 0%,
-    hsl(0, 0%, 100%) 10%,
-    hsl(0, 0%, 30%) 20%
+    hsl(0, 0%, 100%) 0%,
+    hsl(0, 0%, 30%) 10%,
+    hsl(0, 0%, 100%) 20%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -308,7 +318,14 @@ footer p {
   color: var(--primary);
 }
 #google_translate_element {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0.4rem;
+  position: relative;
+  text-align: right;
+  right: -80px;
+  top: -80px;
+}
+#credits {
+  font-size: x-small;
+  text-align: right;
+  margin-bottom: 2rem;
+  padding: 0.3rem;
 }
