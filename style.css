@@ -74,6 +74,15 @@ footer p {
   color: var(--primary);
   font-weight: var(--fm);
 }
+
+.img {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--secondary);
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
 /* article p {
   position: relative;
   letter-spacing: 7px;
