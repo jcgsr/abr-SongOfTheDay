@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://songoftheday.netlify.app/">
-    <img alt="Song of the Day" src="https://songoftheday.netlify.app/assets/music-solid.svg" width="200" />
+    <img alt="Song of the Day" src="https://images.pexels.com/photos/8038906/pexels-photo-8038906.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="200" />
   </a>
 </p>
 <h1 align="center">
