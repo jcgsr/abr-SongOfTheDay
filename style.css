@@ -133,6 +133,12 @@ img {
   padding: 6rem;
   opacity: 0.8;
 }
+@media screen and (max-width: 456px) {
+  .hero {
+    padding: 2rem;
+  }
+}
+
 .singer {
   font-size: 12vw;
   background: url(https://i0.statig.com.br/bancodeimagens/bp/dk/lx/bpdklxrk3q3zpdkaf2xsqteom.jpg);
