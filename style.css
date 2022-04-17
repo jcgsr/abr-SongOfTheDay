@@ -329,6 +329,13 @@ img {
   right: -80px;
   top: -80px;
 }
+@media screen and (max-width: 456px) {
+  #google_translate_element {
+    right: -20px;
+    top: -20px;
+  }
+}
+
 #credits {
   font-size: x-small;
   text-align: right;
