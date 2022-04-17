@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://songoftheday.netlify.app/">
-    <img alt="Song of the Day" src="https://www.camylleazevedo.com.br/static/3d695bd5ccb9169a89f8d24045ff7fec/78d40/intervencao.webp" width="200" />
+    <img alt="Song of the Day" src="https://songoftheday.netlify.app/assets/music-solid.svg" width="200" />
   </a>
 </p>
 <h1 align="center">
